@@ -2,6 +2,7 @@ package org.example;
 
 import static junit.framework.TestCase.assertEquals;
 import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 import org.junit.jupiter.api.*;
 
@@ -72,7 +73,7 @@ public class CalculatorTest
     }
 
 
-
+    //@RepeatedTest (5)
     @DisplayName("multi *")
     @Test
     public void multiTest(){
@@ -87,7 +88,7 @@ public class CalculatorTest
     @Test
     public void DivTest(){
         Calculator app = new Calculator();
-        assertEquals(3, Calculator.div(6,2));
+        assertNotEquals(3, Calculator.div(6,3));
 
 
 
