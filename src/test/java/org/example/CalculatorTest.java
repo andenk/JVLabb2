@@ -3,17 +3,53 @@ package org.example;
 import static junit.framework.TestCase.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 /**
- * Unit test for simple App.
+
+ @Test på alla
+ @DisplayName på alla
+ @RepeateTest på MultiTest
+ @Disabled på DelTest
+
+
+
+
+ * @Test // test
+ @DisplayName("ADD +") // namn på testet
+
+ @RepeatedTest //upprepa testet
+ @Disabled // kör inte detta test
+
+
+ // före , efter en eller alla tester
+ @BeforeEach
+ @AfterEach
+ @BeforeAll
+ @AfterAll
+
+
+ // är de lika eller inte
+ assertEquals
+ assertNotEquals
+
+ //Sant eller inte
+ assertTrue
+ assertFalse
+
+//
+ assertNull
+ assertNotNull
  */
 public class CalculatorTest
 {
+    @BeforeEach
+    void init() {
+        System.out.println("Before each test");
+    }
 
+    @DisplayName("ADD +") // namn på testet
 
-    @DisplayName("ADD +")
     @Test
 
     public void AddTest()
@@ -24,7 +60,7 @@ public class CalculatorTest
 
     }
 
-
+    @Disabled
     @DisplayName("Del -")
     @Test
     public void DelTest(){
@@ -34,6 +70,9 @@ public class CalculatorTest
 
 
     }
+
+
+
     @DisplayName("multi *")
     @Test
     public void multiTest(){
