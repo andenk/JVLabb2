@@ -13,6 +13,11 @@ import org.junit.jupiter.api.*;
  @RepeateTest på MultiTest
  @Disabled på DelTest
 
+ assertEquals addTest
+ assertTrue versialer
+ assertNotEquals vendTest
+ assertNotNull gemener
+ assertFalse vend
 
 
 
