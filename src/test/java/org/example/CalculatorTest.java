@@ -69,7 +69,7 @@ public class CalculatorTest
 
     @Disabled
     @DisplayName("Del -")
-    @Test
+
     public void DelTest(){
         Calculator app = new Calculator();
         assertEquals(4, Calculator.del(6,2));
