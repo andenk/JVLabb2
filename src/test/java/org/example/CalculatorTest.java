@@ -78,7 +78,7 @@ public class CalculatorTest
     }
 
 
-    //@RepeatedTest (5)
+    @RepeatedTest (5)
     @DisplayName("multi *")
     @Test
     public void multiTest(){
